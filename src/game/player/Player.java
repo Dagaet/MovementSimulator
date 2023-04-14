@@ -1,20 +1,20 @@
-package game.character;
+package game.player;
 
-public class Character {
+public class Player {
 
     protected String name;
     protected int coordinatey = 0;
     protected int coordinatex = 0;
     protected int vel = 1;
 
-    public Character(String name, int coordinatey, int coordinatex, int vel) {
+    public Player(String name, int coordinatey, int coordinatex, int vel) {
         this.name = name;
         this.coordinatey = coordinatey;
         this.coordinatex = coordinatex;
         this.vel = vel;
     }
 
-    public String getName(String name) {
+    public String getName() {
         return name;
     }
 
