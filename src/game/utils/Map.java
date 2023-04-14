@@ -12,10 +12,15 @@ public class Map {
     // siguiente apartado.
 
     int mapSize;
-    String[][] generatedMap = MapGenerator.mapGenerated(3);
+    String[][] generatedMap;
 
     public Map(int mapSize) {
         this.mapSize = mapSize;
+        this.generatedMap = MapGenerator.mapGenerated(mapSize);
+    }
+
+    public String[][] getGeneratedMap() {
+        return generatedMap;
     }
 
     // public void mostrarMatriz(){
