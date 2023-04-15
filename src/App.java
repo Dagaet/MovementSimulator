@@ -9,7 +9,7 @@ public class App {
         Player player = new Player("Saul", 1, 1, 1);
         GameMenu gameMenu = new GameMenu(player, map);
         System.out.println(MapGenerator.mapGeneratedLegend());
-       // gameMenu.mountPlayer();
+        gameMenu.mountPlayer();
         gameMenu.playerMovement();
         System.out.println(player.getCoordinatex());
         System.out.println(player.getCoordinatey());

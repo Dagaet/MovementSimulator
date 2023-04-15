@@ -61,7 +61,7 @@ public class GameMenu {
     public String printMap(){
         String msg= "";
         for (int i = 0; i < endMap.length; i++) {
-            for (int j = 0; j < endMap[0].length; j++) {
+            for (int j = 0; j < endMap.length; j++) {
                 if (player.getCoordinatex() == j && player.getCoordinatey() == i && player.getVel()==2){
                     msg += "8 ";
                 } else if (player.getCoordinatex() == j && player.getCoordinatey() == i && player.getVel()==1) {
