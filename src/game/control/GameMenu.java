@@ -7,55 +7,72 @@ import game.utils.Map;
 
 public class GameMenu {
     final private Scanner keyboard = new Scanner(System.in); 
-    private Player character;
+    private Player player;
     private Map map;
+    private String[][] endMap;
 
     public GameMenu(Player character, Map map) {
-        this.character = character;
+        this.player = character;
         this.map = map;
+        this.endMap = map.getGeneratedMap();
     }
 
     public void mountPlayer() {
-        if (this.character.getVel() == 2) {
+        if (this.player.getVel() == 2) {
             System.out.println("Character is already on the bicicle ");
         } else {
-            this.character.setVel(2);
+            this.player.setVel(2);
             System.out.println("Player has mounted the bicicle");
         }
     }
 
     public void unmountPlayer() {
-        if (this.character.getVel() == 2) {
-            this.character.setVel(1);
+        if (this.player.getVel() == 2) {
+            this.player.setVel(1);
             System.out.println("Player has unmounted the bicicle and now is walking");
         } else {
             System.out.println("Character is already walking");
         }
     }
 
-    public void playerMovement(String movement) {
+    public void playerMovement() {
         System.out.println("Where do you want to move? \n Press w,s,a,d to move to an specific direction and then press enter");
         String answer = keyboard.nextLine();
 
         switch (answer){
             case "w":
-                
+                    player.setCoordinatey(player.getCoordinatey() - player.getVel());
                 break;
             case "s":
+                player.setCoordinatey(player.getCoordinatey() + player.getVel());
                 break;
             case "a":
+                player.setCoordinatex(player.getCoordinatex() - player.getVel());
                 break; 
             case "d":
+                player.setCoordinatex(player.getCoordinatex() + player.getVel());
                 break;
             default:
                 System.out.println("Select one please");
                 break;
         }
-
     }
 
-    public void printMap(){
-
+    public String printMap(){
+        String msg= "";
+        for (int i = 0; i < endMap.length; i++) {
+            for (int j = 0; j < endMap[0].length; j++) {
+                if (player.getCoordinatex() == j && player.getCoordinatey() == i && player.getVel()==2){
+                    msg += "8 ";
+                } else if (player.getCoordinatex() == j && player.getCoordinatey() == i && player.getVel()==1) {
+                    msg += "0 ";
+                } else {
+                    msg += endMap[i][j] + " ";
+                }
+            }
+            msg += "\n";
+        }
+        return msg;
     }
 
     public void legend(){

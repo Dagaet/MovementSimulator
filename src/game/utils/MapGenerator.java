@@ -30,7 +30,7 @@ public class MapGenerator {
             }
             msg += "\n";
         }
-        System.out.println(msg);
+        // System.out.println(msg);
         return test;
     }
 
