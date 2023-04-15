@@ -1,10 +1,12 @@
 package game.control;
 
+import java.util.Scanner;
+
 import game.player.Player;
 import game.utils.Map;
 
 public class GameMenu {
-
+    final private Scanner keyboard = new Scanner(System.in); 
     private Player character;
     private Map map;
 
@@ -32,9 +34,24 @@ public class GameMenu {
     }
 
     public void playerMovement(String movement) {
-        if (movement.equals("W")){
-            
+        System.out.println("Where do you want to move? \n Press w,s,a,d to move to an specific direction and then press enter");
+        String answer = keyboard.nextLine();
+
+        switch (answer){
+            case "w":
+                
+                break;
+            case "s":
+                break;
+            case "a":
+                break; 
+            case "d":
+                break;
+            default:
+                System.out.println("Select one please");
+                break;
         }
+
     }
 
     public void printMap(){

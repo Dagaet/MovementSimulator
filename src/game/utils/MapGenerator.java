@@ -34,4 +34,10 @@ public class MapGenerator {
         return test;
     }
 
+    public static String mapGeneratedLegend(){
+        String msg = "# -> Map border (not accessible) \n";
+        msg += "X -> Map's Floor (accessible)";
+        return msg;
+    }
+
 }
