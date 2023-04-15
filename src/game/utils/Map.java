@@ -13,5 +13,4 @@ public class Map {
     public String[][] getGeneratedMap() {
         return generatedMap;
     }
-
 }
