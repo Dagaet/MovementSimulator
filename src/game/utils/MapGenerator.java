@@ -30,8 +30,14 @@ public class MapGenerator {
             }
             msg += "\n";
         }
-        System.out.println(msg);
+        // System.out.println(msg);
         return test;
+    }
+
+    public static String mapGeneratedLegend(){
+        String msg = "# -> Map border (not accessible) \n";
+        msg += "X -> Map's Floor (accessible)";
+        return msg;
     }
 
 }
