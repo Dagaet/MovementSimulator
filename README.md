@@ -9,8 +9,9 @@ The objective of this proyect is to represent the movement of a character in an 
 ### File Structure
 
 In the next links are described the classes of the repository:
-[App file](documentation/App.md)
-[GameMenu file](documentation/GameMenu.md)
-[Map file](documentation/Map.md)
-[MapGenerator file](documentation/MapGenerator.md)
-[Player file](documentation/Player.md)
+
+- [App file](documentation/App.md)
+- [GameMenu file](documentation/GameMenu.md)
+- [Map file](documentation/Map.md)
+- [MapGenerator file](documentation/MapGenerator.md)
+- [Player file](documentation/Player.md)

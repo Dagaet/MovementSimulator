@@ -15,7 +15,8 @@ If we execute the main file, we will see a menu with the following information:
    - If the player is not mounted it mounts it into the bicycle.
 
 3. Show the map with the player:
-   \*It shows the map with the player current position.
+
+   - It shows the map with the player current position.
 
 4. Show the map legend:
 
