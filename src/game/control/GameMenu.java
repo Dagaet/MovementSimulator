@@ -19,17 +19,17 @@ public class GameMenu {
 
     public void mountPlayer() {
         if (this.player.getVel() == 2) {
-            System.out.println("Character is already on the bicicle ");
+            System.out.println("Character is already on the bicycle ");
         } else {
             this.player.setVel(2);
-            System.out.println("Player has mounted the bicicle");
+            System.out.println("Player has mounted the bicycle");
         }
     }
 
     public void unmountPlayer() {
         if (this.player.getVel() == 2) {
             this.player.setVel(1);
-            System.out.println("Player has unmounted the bicicle and now is walking");
+            System.out.println("Player has unmounted the bicycle and now is walking");
         } else {
             System.out.println("Character is already walking");
         }

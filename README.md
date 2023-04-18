@@ -1,18 +1,16 @@
-## Getting Started
+### Proyect objective
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+The objective of this proyect is to represent the movement of a character in an closed environment using the Java console. The main idea is to replicate the bidimensional movement of an old GameBoy, as Pokemon Red.
 
-## Folder Structure
+### User documentation
 
-The workspace contains two folders by default, where:
+[User documentation file](userDocumentation/Userdoc.md)
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+### File Structure
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+In the next links are described the classes of the repository:
+[App file](documentation/App.md)
+[GameMenu file](documentation/GameMenu.md)
+[Map file](documentation/Map.md)
+[MapGenerator file](documentation/MapGenerator.md)
+[Player file](documentation/Player.md)
